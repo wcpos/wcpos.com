@@ -8,6 +8,7 @@ import Icon from "~/components/front/Icon";
 import LocaleSelector from "~/components/toggles/LocaleSelector";
 import DarkModeToggle from "~/components/toggles/DarkModeToggle";
 import clsx from "clsx";
+
 export default function HeaderSimple({ item }: { item: HeaderBlockDto }) {
   const { t } = useTranslation();
   const location = useLocation();
@@ -107,20 +108,20 @@ export default function HeaderSimple({ item }: { item: HeaderBlockDto }) {
                       )}
                     </Menu.Item>
                   ) : (
-                    <Menu.Item tabIndex={0}>
-                      <div
+                    <Menu.Item>
+                      {/* <div
                         className={clsx(
                           "overflow-hidden rounded-md text-base font-medium leading-6 transition duration-150 ease-in-out focus:outline-none",
                           !isCurrent(item.path ?? "") && "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300",
                           isCurrent(item.path ?? "") && "text-gray-900 dark:text-white"
                         )}
                       >
-                        {t(item.title)}
+                        
                         <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24">
                           <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                         </svg>
-                      </div>
-                      <Menu className="bg-base-100 z-10 rounded-lg border border-gray-200 p-2 dark:border-gray-700 dark:bg-gray-900">
+                      </div> */}
+                      <Menu.Details label={t(item.title)} className="bg-base-100 z-10 rounded-lg border border-gray-200 p-2 dark:border-gray-700 dark:bg-gray-900">
                         {item.items.map((subItem, idx) => {
                           return (
                             <Menu.Item
@@ -141,7 +142,7 @@ export default function HeaderSimple({ item }: { item: HeaderBlockDto }) {
                             </Menu.Item>
                           );
                         })}
-                      </Menu>
+                      </Menu.Details>
                     </Menu.Item>
                   )}
                 </Fragment>

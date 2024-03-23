@@ -1,7 +1,7 @@
 import { ActionFunction, LinksFunction, LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration, useLoaderData } from "@remix-run/react";
 import styles from "./tailwind.css";
-import { useChangeLanguage } from "remix-i18next";
+import { useChangeLanguage } from "remix-i18next/react";
 import { createUserSession, getUserInfo } from "./utils/session.server";
 import { loadRootData, useRootData } from "./utils/data/useRootData";
 import clsx from "clsx";

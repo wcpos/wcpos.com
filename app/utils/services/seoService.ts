@@ -6,13 +6,13 @@ export async function getSeoMetaTags(request?: Request): Promise<MetaTagsDto> {
 }
 
 async function getSeoMetaTagsFromPathname(pathname: string) {
-  const title = "Remix Page Blocks";
-  const description = "A collection of functional Remix and Tailwind CSS page blocks.";
-  const keywords = "remix,saas,tailwindcss,react,typescript,boilerplate,saas-kit,saas-boilerplate";
+  const title = "WooCommerce POS";
+  const description = "A WordPress plugin for taking WooCommerce orders at the Point of Sale.";
+  const keywords = "";
   const image = "https://yahooder.sirv.com/remixblocks/page-blocks/cover.png";
   const twitterImage = "https://yahooder.sirv.com/remixblocks/page-blocks/thumbnail.png";
-  const twitterCreator = "@AlexandroMtzG";
-  const twitterSite = "@saas_rock";
+  const twitterCreator = "@wcpos";
+  const twitterSite = "@wcpos";
 
   const metaTags: MetaTagsDto = [
     {

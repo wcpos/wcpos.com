@@ -2,7 +2,7 @@ import { RemixBrowser } from "@remix-run/react";
 import { startTransition, StrictMode } from "react";
 import { hydrateRoot } from "react-dom/client";
 
-import { getInitialNamespaces } from "remix-i18next";
+import { getInitialNamespaces } from "remix-i18next/client";
 import { I18nextProvider, initReactI18next } from "react-i18next";
 
 import i18next from "i18next";

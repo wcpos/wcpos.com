@@ -14,7 +14,7 @@ export default {
     // uses the v1 convention, works in v1.15+ and v2
     return createRoutesFromFolders(defineRoutes);
   },
-  serverDependenciesToBundle: ["remix-i18next"],
+  serverDependenciesToBundle: ["remix-i18next/react"],
   watchPaths: ["./tailwind.config.ts"],
   cacheDirectory: "./node_modules/.cache/remix",
   browserNodeBuiltinsPolyfill: {

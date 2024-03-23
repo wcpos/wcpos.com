@@ -41,7 +41,7 @@ export default function IndexRoute() {
 
   return (
     <div>
-      <PageBlockEditMode items={blocks} onSetBlocks={(e) => setBlocks(e)} />
+      {/* <PageBlockEditMode items={blocks} onSetBlocks={(e) => setBlocks(e)} /> */}
       <PageBlocks items={blocks} editMode={isEditMode()} onChange={(e) => setBlocks(e)} />
     </div>
   );

@@ -5,7 +5,7 @@ export function defaultHeader({ t }: { t: TFunction }): HeaderBlockDto {
   return {
     style: HeaderBlockStyle.simple,
     withLogo: true,
-    withSignInAndSignUp: false,
+    withSignInAndSignUp: true,
     withThemeSwitcher: true,
     withLanguageSwitcher: true,
     links: [

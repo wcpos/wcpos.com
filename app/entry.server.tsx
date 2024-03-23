@@ -1,6 +1,6 @@
 import type { AppLoadContext, EntryContext } from "@remix-run/node";
 
-import isbot from "isbot";
+import { isbot } from "isbot";
 
 import { resolve } from "node:path";
 import { PassThrough } from "node:stream";

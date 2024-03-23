@@ -33,13 +33,13 @@ const defaultStyles = {
 export function defaultLandingPage({ t }: { t: TFunction }) {
   const blocks: PageBlockDto[] = [
     // Banner
-    {
-      banner: {
-        style: defaultStyles.banner,
-        text: t("blocks.banner.text"),
-        cta: [{ text: t("blocks.banner.cta.learnMore"), href: "https://saasrock.com/?ref=remix-page-blocks-banner-v2", target: "_blank" }],
-      },
-    },
+    // {
+    //   banner: {
+    //     style: defaultStyles.banner,
+    //     text: t("blocks.banner.text"),
+    //     cta: [{ text: t("blocks.banner.cta.learnMore"), href: "https://saasrock.com/?ref=remix-page-blocks-banner-v2", target: "_blank" }],
+    //   },
+    // },
     // Header
     {
       header: defaultHeader({ t }),
